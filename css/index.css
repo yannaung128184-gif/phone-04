@@ -1,0 +1,361 @@
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/banner-entradas-blog-2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #c8a97e;
+    font-weight: bold;
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin-bottom: 10px;
+}
+
+/* Cards System (Common for index/menu if needed) */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #c8a97e;
+    margin-top: 15px;
+}
+
+.card p {
+    color: #cccccc;
+}
+/* View Menu ခလုတ်ကို အလှပြင်ခြင်း */
+.hero .btn {
+    display: inline-block;
+    padding: 15px 40px;      /* ခလုတ်ကို ဘေးတိုက်ရော အပေါ်အောက်ပါ ပိုကျယ်စေတယ် */
+    background-color: #c8a97e; /* ရွှေရောင် (Golden Brown) */
+    color: #000;             /* စာလုံးအရောင်ကို အနက်ထားရင် ပိုပေါ်လွင်တယ် */
+    text-decoration: none;   /* စာသားအောက်က မျဉ်းတားဖျောက်မယ် */
+    font-size: 1.2rem;       /* စာလုံးကို ပိုကြီးအောင်လုပ်မယ် */
+    font-weight: bold;       /* စာလုံးကို အထူထားမယ် */
+    border-radius: 50px;     /* ခလုတ်ဘေးတွေကို ဝိုင်းဝိုင်းလေးလုပ်မယ် (ပိုလှတယ်) */
+    transition: all 0.3s ease; /* ပြောင်းလဲမှုတွေကို ငြိမ်ငြိမ်လေး ဖြစ်စေတယ် */
+    text-transform: uppercase; /* စာလုံးအားလုံးကို အကြီးပြောင်းမယ် */
+    box-shadow: 0 4px 15px rgba(200, 169, 126, 0.3); /* အရိပ်လေး နည်းနည်းထည့်မယ် */
+    margin-top: 20px;
+}
+
+/* Mouse ထိလိုက်တဲ့အခါ (Hover) */
+.hero .btn:hover {
+    background-color: #e2c08d; /* အရောင်ကို နည်းနည်း ပိုလင်းသွားစေမယ် */
+    transform: translateY(-5px); /* ခလုတ်လေး အပေါ်ကို နည်းနည်း ကြွတက်လာမယ် */
+    box-shadow: 0 6px 20px rgba(200, 169, 126, 0.5); /* အရိပ်ကို ပိုထင်ရှားစေမယ် */
+    color: #121212;
+}
+.location-info {
+    padding: 60px 5%;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap; /* ဖုန်းနဲ့ကြည့်ရင် အပေါ်အောက် ဖြစ်သွားအောင် */
+    gap: 40px;
+    align-items: center;
+}
+
+.shop-details, .map-frame {
+    flex: 1;
+    min-width: 300px; /* ဖုန်းမှာ တစ်ခုချင်းစီ အပြည့်ပေါ်ဖို့ */
+}
+
+.shop-details h2 {
+    color: #c8a97e;
+    margin-bottom: 20px;
+}
+
+.shop-details p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.map-frame iframe {
+    border-radius:10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* View Full Menu ခလုတ်ပုံစံလေး */
+.view-all {
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-outline {
+    padding: 12px 40px;
+    border: 2px solid #c8a97e;
+    color: #c8a97e;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.btn-outline:hover {
+    background: #c8a97e;
+    color: #000;
+}
+/* Featured Menu ခေါင်းစဉ်ကို အပေါ်အောက် နေရာချန်တာ */
+.featured-menu h2 {
+    margin-top: 40px;      /* အပေါ်က Hero Section နဲ့ ခွာလိုက်တာ */
+    margin-bottom: 50px;   /* အောက်က Coffee Card တွေနဲ့ ခွာလိုက်တာ */
+    font-size: 2.2rem;     /* လိုအပ်ရင် အရွယ်အစား နည်းနည်းညှိနိုင်ပါတယ် */
+    color: #c8a97e;
+    text-align: center;      /* နဂိုအတိုင်း ဘယ်ဘက်မှာပဲ ထားမယ် */
+}
+
+/* တစ်ခါတည်း Card တွေကြားထဲက အကွာအဝေးကိုပါ ညှိချင်ရင် */
+.cards {
+    gap: 40px;             /* Card တစ်ခုနဲ့တစ်ခုကြား နေရာပိုလွတ်သွားအောင် */
+}
+/* Footer Section တစ်ခုလုံး */
+footer {
+    background-color: #0a0a0a; /* Header ထက် နည်းနည်းပိုမှောင်တဲ့ အနက်ရောင် */
+    color: #ffffff;
+    padding: 60px 5% 20px; /* အပေါ်မှာ နေရာပိုချန်ပြီး အောက်ခြေမှာ နည်းနည်းပဲချန်မယ် */
+    border-top: 1px solid rgba(200, 169, 126, 0.2); /* အပေါ်မှာ ရွှေရောင်လိုင်းပါးပါးလေး ထည့်မယ် */
+    text-align: center;
+}
+
+/* Footer Content တွေကို စုစည်းဖို့ */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo ပုံစံ */
+.footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c8a97e;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Page Link များ */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-links li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.footer-links li a:hover {
+    color: #c8a97e; /* Mouse ထိရင် ရွှေရောင်ပြောင်းမယ် */
+}
+
+/* Social Icons Section */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.social-icons a:hover {
+    background-color: #c8a97e;
+    color: #000;
+    border-color: #c8a97e;
+    transform: translateY(-3px);
+}
+
+/* Copyright စာသား */
+.copyright {
+    color: #555555;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 30px;
+}
+
+/* Mobile အတွက် အဆင်ပြေအောင် ညှိမယ် */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .social-icons a {
+        width: 180px; /* ဖုန်းမှာ ခလုတ်လေးတွေ အရွယ်တူအောင် */
+        justify-content: center;
+    }
+}
+.features-section {
+    padding: 80px 5%;
+    background-color: #121212; /* နောက်ခံအမည်း */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto Responsive ဖြစ်အောင် */
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-box {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03); /* မှန်ကြည်သားပုံစံ ငြိမ်ငြိမ်လေး */
+    border-radius: 20px;
+    border: 1px solid rgba(200, 169, 126, 0.1);
+    transition: 0.4s ease;
+}
+
+.feature-box:hover {
+    background: rgba(200, 169, 126, 0.05);
+    border-color: #c8a97e;
+    transform: translateY(-10px); /* Mouse တင်ရင် ကြွလာတဲ့ effect */
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.feature-box h3 {
+    color: #c8a97e; /* ရွှေရောင်ခေါင်းစဉ် */
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    color: #aaaaaa;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Mobile အတွက် အချိုးအစား */
+@media (max-width: 768px) {
+    .features-section {
+        padding: 50px 5%;
+    }
+}
+.main-footer {
+    background-color: #0a0a0a;
+    padding: 80px 5% 40px;
+    border-top: 1px solid rgba(200, 169, 126, 0.1);
+    text-align: center;
+}
+
+/* Newsletter Part in Footer */
+.footer-newsletter {
+    max-width: 600px;
+    margin: 0 auto 60px; /* Footer အောက်ခြေနဲ့ ခွာထားမယ် */
+}
+
+.footer-newsletter h2 {
+    color: #c8a97e;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.footer-newsletter p {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.newsletter-form input {
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: white;
+    width: 60%;
+}
+
+.newsletter-form button {
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: none;
+    background: #c8a97e;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #e2c08d;
+    transform: scale(1.05);
+}
+
+/* ခံထားတဲ့ လိုင်းတိုလေး */
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(200,169,126,0.3), transparent);
+    margin-bottom: 60px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .newsletter-form input {
+        width: 100%;
+    }
+}

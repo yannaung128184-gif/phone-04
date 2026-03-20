@@ -1,0 +1,404 @@
+/* 1. Menu Hero Section */
+.menu-hero {
+    height: 50vh;
+    min-height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url("../images/menu1.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-hero h1 {
+    font-size: 3.5rem;
+    color: #c8a97e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* 2. Menu Page Layout */
+.menu-page {
+    padding: 60px 5%;
+    background-color: #121212;
+    text-align: center;
+}
+
+/* 3. Filter Buttons Style */
+.menu-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    border: 1px solid #c8a97e;
+    background: transparent;
+    color: #c8a97e;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #c8a97e;
+    color: #000;
+}
+
+/* 4. Menu Grid (Cards Container) */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* 5. Individual Card Style */
+.menu-item {
+    width: 300px;
+    background-color: #1a1a1a;
+    padding: 9px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    text-align: center;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item.hide {
+    display: none; /* Filter လုပ်ရင် ဖျောက်ဖို့ */
+}
+
+.menu-item:hover {
+    border-color: #c8a97e;
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    color: #c8a97e;
+    margin: 15px 0 10px;
+}
+
+.menu-price {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+    width: 100%;
+    padding: 13px;
+    background: transparent;
+    border: 1px solid #c8a97e;
+    color: #c8a97e;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background: #c8a97e;
+    color: #000;
+}
+
+/* 6. Modal Styles (Order Popup) */
+/* Modal တစ်ခုလုံးရဲ့ background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px); /* နောက်ခံကို ဝါးသွားစေတယ် */
+}
+
+/* Modal Box အလယ်ကစာလုံးအဖြူကွက် */
+.modal-content {
+    background-color: #1a1a1a;
+    margin: 5% auto; /* အပေါ်ကနေ ၅% ပဲ ချန်မယ် */
+    padding: 20px;
+    border: 1px solid #c8a97e;
+    width: 90%;
+    max-width: 400px; /* အကျယ်ဆုံး 400px ထက်မကျော်စေရ - ဒါဆိုရင် သေးသေးလေးနဲ့ လှသွားပါပြီ */
+    border-radius: 15px;
+    position: relative;
+    max-height: 90vh; /* ဖုန်း screen ထက် မကျော်စေရန် */
+    overflow-y: auto; /* စာများရင် scroll ဆွဲလို့ရရန် */
+}
+
+/* Form ထဲက Input တွေရဲ့ ဆိုဒ်ကို နည်းနည်းသေးမယ် */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input, .form-group label {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem; /* စာလုံးဆိုဒ် နည်းနည်းလျှော့မယ် */
+}
+
+.qr-img {
+    width: 120px; /* QR ကို ဆိုဒ်သေးလိုက်မယ် */
+    height: 120px;
+}
+/* 7. Responsive Design */
+@media (max-width: 768px) {
+    .menu-hero h1 { font-size: 2rem; }
+}
+
+@media (max-width: 600px) {
+    .menu-item { width: 100%; max-width: 350px; }
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #c8a97e; /* ရွှေရောင်လေးနဲ့ ပိုပေါ်လွင်အောင် */
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.form-group select, .form-group input {
+    width: 100%;
+    padding: 12px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group select:focus, .form-group input:focus {
+    border-color: #c8a97e; /* ရွေးလိုက်ရင် ဘောင်လေးလင်းလာမယ် */
+}
+
+.confirm-btn {
+    width: 100%;
+    padding: 10px;
+    background: #c8a97e;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.confirm-btn:hover {
+    background: #e2c08d;
+    transform: scale(1.02);
+}
+.search-container {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+}
+
+#menuSearch {
+    width: 100%;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: 1px solid #c8a97e;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+#menuSearch:focus {
+    background: rgba(200, 169, 126, 0.1);
+    box-shadow: 0 0 10px rgba(200, 169, 126, 0.3);
+}
+.form-group {
+    margin-bottom: 20px; /* တစ်ခုနဲ့တစ်ခု အကွာအဝေး */
+}
+
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.qty-btn {
+    background: #c8a97e;
+    border: none;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* ခလုတ်တွေကြား အကွာအဝေး */
+    background: #222; /* Box နောက်ခံအရောင် */
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.qty-btn {
+    background: #c8a97e; /* ရွှေရောင်ခလုတ် */
+    border: none;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.qty-btn:hover {
+    background: #e2c08d;
+    transform: scale(1.1);
+}
+
+#qty-count {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    min-width: 30px;
+    text-align: center;
+}
+.add-to-cart-btn {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid #c8a97e; /* ရွှေရောင်ဘောင်လေးနဲ့ */
+    color: #c8a97e;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+    display: block; /* သေချာပေါက် ပေါ်နေအောင် */
+}
+
+.add-to-cart-btn:hover {
+    background: #c8a97e;
+    color: #000;
+}
+/* Modal ထဲက ခလုတ်များ လှနေအောင် */
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.qty-btn {
+    background: #c8a97e !important; /* အရောင် သေချာပေါ်အောင် */
+    color: black !important;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.search-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.search-wrapper {
+    position: relative; /* Icon ကို နေရာချဖို့ */
+    display: flex;
+    align-items: center;
+}
+
+#menuSearch {
+    width: 100%;
+    padding: 12px 20px 12px 45px; /* ဘယ်ဘက်မှာ Icon အတွက် နေရာချန် (45px) */
+    border-radius: 50px; /* Google စတိုင် ဝိုင်းဝိုင်းလေး */
+    border: 1px solid rgba(200, 169, 126, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* မှန်ဘီလူး Icon ပုံစံသွင်းခြင်း */
+.search-icon {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    color: #c8a97e; /* ရွှေရောင်လေး */
+    pointer-events: none; /* Icon ကို နှိပ်လို့မရအောင် (Input ကိုပဲ ထိအောင်) */
+}
+
+/* Mouse ထောက်လိုက်ရင် လင်းလာအောင် */
+#menuSearch:focus {
+    background: rgba(200, 169, 126, 0.1);
+    border-color: #c8a97e;
+    box-shadow: 0 0 15px rgba(200, 169, 126, 0.2);
+}
+.qr-container {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.qr-img {
+    width: 150px; /* QR ပုံအရွယ်အစား */
+    height: 150px;
+    object-fit: contain;
+}
+
+#payment-ss {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px dashed #c8a97e;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}

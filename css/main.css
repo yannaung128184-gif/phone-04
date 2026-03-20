@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #121212;
+    font-family: sans-serif; /* သင့်စိတ်ကြိုက် font ပြောင်းနိုင်သည် */
+}
+
+/* Header & Navigation Fix */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #121212; /* နောက်ခံအရောင် */
+    /* border-bottom ကို ဒီနေရာမှာ မသုံးပါနဲ့ */
+    position: relative; /* အောက်က လိုင်းကို ထိန်းဖို့ position ပေးမယ် */
+    z-index: 100;
+}
+
+/* Logo နေရာ */
+.logo {
+    color: #c8a97e;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Nav အုပ်စု */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Link တွေနဲ့ Button တွေကြား အကွာအဝေး */
+}
+
+/* Link တွေကို အဖြူရောင်ပြောင်းရန် */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff !important; /* အဖြူရောင်သေချာဖြစ်အောင် Force လုပ်ခြင်း */
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #c8a97e !important;
+}
+
+/* Sign In / Sign Up ခလုတ်များ */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Sign In / Sign Up Buttons */
+.auth-buttons a {
+    text-decoration: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.login {
+    color: #ffffff;
+}
+
+.signup {
+    background-color: #c8a97e;
+    color: #121212;
+    margin-left: 10px;
+}
+
+.signup:hover {
+    background-color: #b08d5f;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Logo အပေါ်၊ Nav အောက် */
+        gap: 15px;
+        padding: 15px 2%;
+    }
+
+    nav {
+        flex-direction: column; /* Menu links အပေါ်၊ Buttons အောက် */
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 13px;
+    }
+}
+.newsletter {
+    background-color: #1a1a1a;
+    padding: 60px 5%;
+    text-align: center;
+    border-top: 1px solid #c8a97e;
+}
+.newsletter-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.newsletter-form input {
+    padding: 12px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #c8a97e;
+    background: #121212;
+    color: white;
+}
+/* Header တစ်ခုလုံးရဲ့ အောက်ခြေမှာ လိုင်းတစ်ထပ် ထည့်တာ */
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* လိုင်းရဲ့ အထူ */
+    background: linear-gradient(to right, transparent, #c8a97e, transparent); /* အလယ်ကနေ ဘေးကို မှိန်သွားတဲ့ လိုင်း */
+}
+.menu-hero {
+    /* ပုံထည့်မယ့် နေရာ */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/1-about.about-hero-img'); 
+    
+    /* ပုံကို အနေအထား ချိန်ညှိခြင်း */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Scroll ဆွဲရင် ပုံက ငြိမ်နေမယ့် effect (Parallax) */
+    
+    /* အမြင့်သတ်မှတ်ခြင်း */
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.menu-hero-content h1 {
+    font-size: 3.5rem;
+    color: #c8a97e; /* Coffee bank အရောင် */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.menu-hero-content p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}

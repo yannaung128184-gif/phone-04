@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Coffee bank</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css"> 
+</head>
+<body>
+
+<header>
+    <div class="logo">Coffee Bank</div>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h1>OUR coffee bank MENU</h1>
+            <p>လတ်ဆတ်ပြီး အရသာရှိတဲ့ ကျွန်တော်တို့ရဲ့ ကော်ဖီလက်ရာများ</p>
+        </div>
+    </section>
+
+    <section class="menu-page">
+        <div class="search-container">
+            <div class="search-wrapper">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="menuSearch" placeholder="search your drink here. . .">
+            </div>
+        </div>
+
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            <button class="filter-btn" data-filter="espresso">Espresso Based</button>
+            <button class="filter-btn" data-filter="coldbrew">Cold Brew</button>
+            <button class="filter-btn" data-filter="drip">Hand Drip</button>
+            <button class="filter-btn" data-filter="matcha">Matcha Series</button>
+            <button class="filter-btn" data-filter="frappe">Frappe Series</button>
+            <button class="filter-btn" data-filter="non-coffee">Non Coffee</button>
+            <button class="filter-btn" data-filter="soda">Soda</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+    
+    <div class="menu-item espresso based"> 
+        <img src="images/espresso.png" alt="Espresso">
+        <div class="menu-info">
+            <h3>Espresso</h3>
+            <span class="menu-price">7,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item espresso based"> 
+        <img src="images/macchiato.png" alt="macchiato">
+        <div class="menu-info">
+            <h3>Macchiato</h3>
+            <span class="menu-price">7,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item espresso based"> 
+        <img src="images/piccolo.png" alt="macchiato">
+        <div class="menu-info">
+            <h3>Piccolo</h3>
+            <span class="menu-price">7,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item espresso based"> 
+        <img src="images/Americano.png" alt="macchiato">
+        <div class="menu-info">
+            <h3>Americano</h3>
+            <span class="menu-price">8,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item espresso based"> 
+        <img src="images/cappuccino.jpg" alt="cappuccino">
+        <div class="menu-info">
+            <h3>Cappuccino</h3>
+            <span class="menu-price">8,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item espresso based"> 
+        <img src="images/Latte.jpg" alt="Latte">
+        <div class="menu-info">
+            <h3>Latte</h3>
+            <span class="menu-price">8,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item espresso based"> 
+        <img src="images/caramel-latte.png" alt="Caramel Latte">
+        <div class="menu-info">
+            <h3>Caramel Latte</h3>
+            <span class="menu-price">9,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item espresso based"> 
+        <img src="images/spanish-latte.png" alt="Spanish Latte">
+        <div class="menu-info">
+            <h3>Spanish Latte</h3>
+            <span class="menu-price">9,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item espresso based"> 
+        <img src="images/dirty-latte.png" alt="dirty-latte">
+        <div class="menu-info">
+            <h3>dirty-latte</h3>
+            <span class="menu-price">9,500 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item espresso based"> 
+        <img src="images/cheesy cloud.png" alt="cheesy cloud">
+        <div class="menu-info">
+            <h3>cheesy cloud</h3>
+            <span class="menu-price">9,500 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+   
+   <div class="menu-item coldbrew"> 
+        <img src="images/cold brew.jpg" alt="cold brew">
+        <div class="menu-info">
+            <h3>Cold Brew</h3>
+            <span class="menu-price">8,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item coldbrew"> 
+        <img src="images/cold brew take away.jpg" alt="coldbrew">
+        <div class="menu-info">
+            <h3>Cold Brew(take away)</h3>
+            <span class="menu-price">14,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item coldbrew"> 
+        <img src="images/ginger Cold brew.jpg" alt="coldbrew">
+        <div class="menu-info">
+            <h3>Ginger Cold Brew</h3>
+            <span class="menu-price">9,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item coldbrew"> 
+        <img src="images/apple-cold-brew.jpg" alt="apple coldbrew">
+        <div class="menu-info">
+            <h3>Apple Cold Brew</h3>
+            <span class="menu-price">9,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item coldbrew"> 
+        <img src="images/lychee-cold-brew.jpg" alt="lychee coldbrew">
+        <div class="menu-info">
+            <h3>Lychee Cold Brew</h3>
+            <span class="menu-price">9,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    
+
+    <div class="menu-item hand drip"> 
+        <img src="images/pin laung.jpg" alt="pin laung">
+        <div class="menu-info">
+            <h3>pin laung</h3>
+            <span class="menu-price">7,500 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item hand drip"> 
+        <img src="images/ywa ngan.jpg" alt="ywa ngan">
+        <div class="menu-info">
+            <h3>pin laung</h3>
+            <span class="menu-price">7,500 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="menu-item matcha series"> 
+        <img src="images/matcha.png" alt="Matcha Latte">
+        <div class="menu-info">
+            <h3>Matcha Latte</h3>
+            <span class="menu-price">12,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item matcha series"> 
+        <img src="images/coconut-matcha.jpg" alt="coconut-matcha">
+        <div class="menu-info">
+            <h3>Coconut-Matcha Latte</h3>
+            <span class="menu-price">15,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item matcha series"> 
+        <img src="images/strawberry matcha.jpg" alt="strawberry matcha">
+        <div class="menu-info">
+            <h3>Coconut-Matcha Latte</h3>
+            <span class="menu-price">15,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="menu-item frappe series"> 
+        <img src="images/cappuccino frappe.jpg" alt="cappuccino frappe">
+        <div class="menu-info">
+            <h3>Coconut-Matcha Latte</h3>
+            <span class="menu-price">15,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="menu-item non-coffee"> 
+        <img src="images/chocolate.jpg" alt="chocolate">
+        <div class="menu-info">
+            <h3>Chocolate</h3>
+            <span class="menu-price">15,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="menu-item soda"> 
+        <img src="images/blueberry soda.jpg" alt="chocolate">
+        <div class="menu-info">
+            <h3>Blueberry Soda</h3>
+            <span class="menu-price">9,000 MMK</span>
+            <button type="button" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    </section>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalItemName" style="color: #c8a97e; margin-bottom: 20px;">Item Name</h2>
+            
+            <form id="orderForm">
+                <div class="form-group">
+                    <label>အရေအတွက်</label>
+                        <div class="quantity-control">
+                            <button type="button" class="qty-btn" id="minus">-</button>
+                                <span id="qty-count">1</span>
+                            <button type="button" class="qty-btn" id="plus">+</button>
+                        </div>
+                        <div class="total-price-display" style="margin-top: 15px; color: #c8a97e; font-size: 1.2rem; font-weight: bold; text-align: center; border: 1px dashed rgba(200, 169, 126, 0.3); padding: 10px; border-radius: 8px;">
+                                စုစုပေါင်းကျသင့်ငွေ: <span id="total-amount">0</span> MMK
+    
+</div>
+
+                <div class="form-group payment-area">
+                    <label style="color: #c8a97e; font-weight: bold;">ငွေပေးချေရန် QR Scan ဖတ်ပါ</label>
+                    <div class="qr-container">
+                        <img src="images/website QR.jpeg" alt="KPay QR" class="qr-img">
+                    </div>
+                    
+                    <label for="payment-ss" style="margin-top: 15px;">ငွေလွှဲပြီးကြောင်း Screenshot တင်ပေးပါ</label>
+                    <input type="file" id="payment-ss" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label>မှတ်ချက် (ဥပမာ- အချိုလျှော့၊ အအေးပို)</label>
+                    <textarea id="note" placeholder="မှတ်ချက်ရှိလျှင် ရေးပေးပါ..." rows="2" style="width: 100%; border-radius: 8px; padding: 10px; background: #2a2a2a; color: white; border: 1px solid #c8a97e;"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phone">ဆက်သွယ်ရန် ဖုန်းနံပါတ်</label>
+                    <input type="tel" id="phone" placeholder="09........" required>
+                </div>
+
+                <button type="submit" class="confirm-btn">Confirm Order & Send Slip</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<script src="js/menu.js"></script>
+</body>
+</html>

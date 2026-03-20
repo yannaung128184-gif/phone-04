@@ -1,0 +1,86 @@
+/* အပေါ်ဆုံးမှာ ဒါလေး အရင်ထည့်ပေးပါ (Box model မှန်အောင်လို့ပါ) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.about-page {
+    background-color: #121212;
+    color: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* --- Hero Section (ပုံတစ်ဖက် စာတစ်ဖက် ဖြစ်စေမယ့်အပိုင်း) --- */
+.about-hero {
+    display: flex;         /* ဒါက အရေးကြီးဆုံးပါ - ဘယ်ညာ ယှဉ်စေတာပါ */
+    align-items: center;   /* စာနဲ့ပုံ အလယ်ဗဟို တန်းနေအောင် */
+    justify-content: center;
+    flex-wrap: wrap;       /* screen သေးရင် အောက်ဆင်းသွားအောင် */
+    gap: 50px;
+    padding: 100px 10%;    /* အပေါ်အောက် space ပိုပေးထားပါတယ် */
+    min-height: 60vh;
+    background: #1a1a1a;
+}
+
+.about-hero-img {
+    flex: 1 1 450px;      /* ပုံရဲ့ အကျယ်ကို သတ်မှတ်တာ */
+    max-width: 600px;
+}
+
+.about-hero-img img {
+    width: 100%;          /* Window ချုံ့ရင် လိုက်သေးသွားမယ် */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(200, 169, 126, 0.3);
+    display: block;
+}
+
+.about-hero-info {
+    flex: 1 1 350px;
+    text-align: left;
+}
+
+.about-hero-info h2 {
+    color: #c8a97e;
+    font-size: clamp(2rem, 5vw, 3.5rem); /* စာလုံးက screen အလိုက် auto ချုံ့ချဲ့ဖြစ်မယ် */
+    margin-bottom: 20px;
+}
+
+.about-hero-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* --- Mission Section (အောက်က Grid အပိုင်း) --- */
+.mission-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.mission-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.mission-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.mission-info {
+    padding: 20px;
+    text-align: left;
+}

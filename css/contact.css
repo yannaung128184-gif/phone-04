@@ -1,0 +1,107 @@
+.contact-page {
+    background-color: #121212;
+    color: rgb(135, 36, 36);
+    padding-top: 10px; /* Header အတွက် နေရာချန်တာ */
+}
+
+/* Contact Hero (Main Shop) */
+.contact-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 10%;
+    align-items: center;
+    background: #1a1a1a;
+}
+
+.main-shop-img {
+    flex: 1 1 500px;
+}
+
+.main-shop-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(200, 169, 126, 0.2);
+}
+
+.main-contact-info {
+    flex: 1 1 300px;
+}
+
+.main-contact-info h2 {
+    color: #c8a97e;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.main-contact-info p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    color: #ddd;
+}
+
+/* Branches Section */
+.branches-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.branches-section h2 {
+    color: #c8a97e;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.branches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.branch-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1px solid #333;
+}
+
+.branch-card:hover {
+    transform: translateY(-10px);
+    border-color: #86520a;
+}
+
+.branch-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.branch-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.branch-info h3 {
+    color: #c8a97e;
+    margin-bottom: 10px;
+}
+
+.branch-info p {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-hero {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+    .main-shop-img img {
+        height: 250px;
+    }
+}
